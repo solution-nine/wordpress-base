@@ -1,0 +1,14 @@
+{
+  "name": "example.com",
+  "version": "0.1.0",
+  "main": "index.js",
+  "repository": "git@github.com:solution-nine/example.com.git",
+  "author": "Felipe Oduardo Sierra <felipe@solutionnine.com>",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+   "config": "./scripts/config.sh",
+	 "setup": "./scripts/setup.sh",
+	 "db:export": "./scripts/database_backup.sh"
+  }
+}
