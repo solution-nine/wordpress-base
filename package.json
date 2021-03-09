@@ -7,8 +7,14 @@
   "license": "UNLICENSED",
   "private": true,
   "scripts": {
-   "config": "./scripts/config.sh",
-	 "setup": "./scripts/setup.sh",
-	 "db:export": "./scripts/database_backup.sh"
+    "config": "./scripts/config.sh",
+    "setup": "./scripts/setup.sh",
+    "db:export": "./scripts/database_backup.sh",
+    "vault:encrypt": "ANSIBLE_VAULT_PASSWORD_FILE=./trellis/.vault_pass ansible-vault encrypt",
+    "vault:decrypt": "ANSIBLE_VAULT_PASSWORD_FILE=./trellis/.vault_pass ansible-vault decrypt",
+    "staging:provision": "./scripts/provision.sh staging",
+    "staging:deploy": "./scripts/deploy.sh staging",
+    "production:provision": "./scripts/provision.sh production",
+    "production:deploy": "./scripts/deploy.sh production"
   }
 }
