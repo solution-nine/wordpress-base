@@ -6,3 +6,7 @@ vault_mail_password: smtp_password
 #
 # vault_wordpress_env_defaults:
 #   my_api_key: 'available to all environments'
+
+composer_authentications:
+  - { hostname: premium.wpmudev.org, username: wpmu_api, password: "null" }
+  - { hostname: github.com, username: felipe, password: github_oauth_token }
